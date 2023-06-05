@@ -23,7 +23,8 @@ const SignInScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#97BAE0" barStyle="dark-content" />
-      <View style={[styles.rectangle, { marginTop: 150 }]}>
+      <Image source={require('../images/logo.png')} style={styles.logo}/>
+      <View style={[styles.rectangle, { marginTop: 175 }]}>
         <Text style={styles.title}>Login</Text>
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Username</Text>
@@ -59,6 +60,10 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#97BAE0',
+  },
+  logo:{
+    width:150,
+    height:150,
   },
   rectangle: {
     position: 'absolute',
