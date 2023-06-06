@@ -31,10 +31,9 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <View style={styles.rectangle}>
           <View style={styles.rowContainer}>
-            <Image source={require('../images/Avatar.png')} style={styles.avatar} />
-            <Text style={styles.text}>
-              Hallo, Welcome{'\n'}
-              <Text style={styles.boldText}>Muhammad Fauzan</Text>
+            <Text style={styles.boldText}>
+              Muhammad Fauzan{'\n'}
+              <Text style={styles.text}>1103204085</Text>
             </Text>
           </View>
         </View>
@@ -184,6 +183,7 @@ const styles = StyleSheet.create({
   boldText: {
     fontSize: 20,
     fontFamily: 'Poppins-Bold',
+    color:'#FFFFFF',
   },
   avatar: {
     width: 48,
