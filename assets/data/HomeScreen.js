@@ -5,9 +5,9 @@ import HistoryScreen from './HistoryScreen';
 import ProfileScreen from './ProfileScreen';
 
 const HomeScreen = () => {
-  const [IR1Filled, setIR1Filled] = useState(true);
+  const [IR1Filled, setIR1Filled] = useState(false);
   const [IR2Filled, setIR2Filled] = useState(false);
-  const [IR3Filled, setIR3Filled] = useState(true);
+  const [IR3Filled, setIR3Filled] = useState(false);
 
   const handleIRPress = (irNumber) => {
     switch (irNumber) {
@@ -47,7 +47,7 @@ const HomeScreen = () => {
             <TouchableOpacity
               style={[
                 styles.rectangleIR,
-                { backgroundColor: IR1Filled ? '#4F1717' : '#038634' },
+                { backgroundColor: IR1Filled ? '#038634' : '#4F1717' },
               ]}
               onPress={() => handleIRPress(1)}
             >
@@ -56,7 +56,7 @@ const HomeScreen = () => {
             <TouchableOpacity
               style={[
                 styles.rectangleIR,
-                { backgroundColor: IR2Filled ? '#4F1717' : '#038634' },
+                { backgroundColor: IR2Filled ? '#038634' : '#4F1717' },
               ]}
               onPress={() => handleIRPress(2)}
             >
@@ -66,7 +66,7 @@ const HomeScreen = () => {
           <TouchableOpacity
             style={[
               styles.rectangleIR,
-              { backgroundColor: IR3Filled ? '#4F1717' : '#038634' },
+              { backgroundColor: IR3Filled ? '#038634' : '#4F1717' },
               { marginTop: 48 },
             ]}
             onPress={() => handleIRPress(3)}

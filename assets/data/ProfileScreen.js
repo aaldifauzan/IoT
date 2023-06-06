@@ -12,16 +12,7 @@ const ProfileScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={'#5F84A1'} barStyle={'dark-content'} />
-      <View style={styles.rectangle}>
-        <View style={styles.rowContainer}>
-          <Image source={require('../images/Avatar.png')} style={styles.avatar} />
-          <Text style={styles.boldText}>
-            Muhammad Fauzan{'\n'}
-            <Text style={styles.text}>1103204085</Text>
-          </Text>
-        </View>
-      </View>
-      
+
       <Text style={styles.text1}>Akun</Text>
       
       <View style={[styles.row, { marginTop: 0 }]}>
